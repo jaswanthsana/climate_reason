@@ -1,0 +1,182 @@
+[
+  {
+    "id": "ef_natural_gas_combustion",
+    "source": "DEFRA 2023",
+    "activity": "Natural gas combustion (stationary)",
+    "sector": "energy",
+    "factor": 2.034,
+    "unit": "kgCO2e/m3",
+    "notes": "Includes CH4 and N2O. Applies to power generation, industrial boilers, district heating."
+  },
+  {
+    "id": "ef_diesel_combustion",
+    "source": "DEFRA 2023",
+    "activity": "Diesel/gas oil combustion",
+    "sector": "transport",
+    "factor": 2.68,
+    "unit": "kgCO2e/litre",
+    "notes": "Road transport primary. Also applies to marine, off-road diesel."
+  },
+  {
+    "id": "ef_coal_power",
+    "source": "IPCC AR6 WG3",
+    "activity": "Coal-fired electricity generation",
+    "sector": "energy",
+    "factor": 820,
+    "unit": "gCO2e/kWh",
+    "notes": "Lifecycle median. Range 740-910 gCO2e/kWh."
+  },
+  {
+    "id": "ef_gas_power",
+    "source": "IPCC AR6 WG3",
+    "activity": "Natural gas combined cycle power generation",
+    "sector": "energy",
+    "factor": 490,
+    "unit": "gCO2e/kWh",
+    "notes": "Lifecycle median including upstream methane. Range 410-650."
+  },
+  {
+    "id": "ef_solar_pv",
+    "source": "IPCC AR6 WG3",
+    "activity": "Solar PV (utility scale)",
+    "sector": "energy",
+    "factor": 24,
+    "unit": "gCO2e/kWh",
+    "notes": "Lifecycle. Range 13-190 gCO2e/kWh. Monocrystalline silicon assumption."
+  },
+  {
+    "id": "ef_wind_onshore",
+    "source": "IPCC AR6 WG3",
+    "activity": "Onshore wind power",
+    "sector": "energy",
+    "factor": 7,
+    "unit": "gCO2e/kWh",
+    "notes": "Lifecycle median. Range 6-13 gCO2e/kWh."
+  },
+  {
+    "id": "ef_nuclear",
+    "source": "IPCC AR6 WG3",
+    "activity": "Nuclear power generation",
+    "sector": "energy",
+    "factor": 12,
+    "unit": "gCO2e/kWh",
+    "notes": "Lifecycle. Range 3-220 gCO2e/kWh."
+  },
+  {
+    "id": "ef_cement_production",
+    "source": "EPA 2023",
+    "activity": "Portland cement production",
+    "sector": "industry",
+    "factor": 0.83,
+    "unit": "tCO2e/tonne_cement",
+    "notes": "Includes process emissions (calcination ~60%) + energy. UAE cement ~0.78 tCO2/t due to waste heat recovery."
+  },
+  {
+    "id": "ef_steel_bof",
+    "source": "World Steel Association 2023",
+    "activity": "Steel production (BF-BOF route)",
+    "sector": "industry",
+    "factor": 1.91,
+    "unit": "tCO2e/tonne_steel",
+    "notes": "Integrated blast furnace route. EAF route: 0.35-0.6 tCO2/t. UAE uses EAF predominantly."
+  },
+  {
+    "id": "ef_aluminium_primary",
+    "source": "IAI 2023",
+    "activity": "Primary aluminium smelting",
+    "sector": "industry",
+    "factor": 11.5,
+    "unit": "tCO2e/tonne_Al",
+    "notes": "Global average. UAE (EGA) uses Gulf grid gas power: approx 10-12 tCO2e/t. Includes process CF4/C2F6."
+  },
+  {
+    "id": "ef_oil_gas_upstream",
+    "source": "IOGP 2022",
+    "activity": "Oil & gas upstream operations (flaring + venting + combustion)",
+    "sector": "industry",
+    "factor": 0.15,
+    "unit": "tCO2e/BOE",
+    "notes": "Global average upstream intensity. UAE ADNOC: ~0.09 tCO2e/BOE (lower flaring). Routine flaring: 0.002 tCO2/m3."
+  },
+  {
+    "id": "ef_desalination_mswro",
+    "source": "IEA WEIO 2023",
+    "activity": "Reverse osmosis desalination (SWRO)",
+    "sector": "water",
+    "factor": 1.5,
+    "unit": "kgCO2e/m3_water",
+    "notes": "At UAE grid intensity (~400gCO2/kWh). Energy: ~3.5-4 kWh/m3. MSF thermal: ~14-20 kWh/m3 (higher carbon)."
+  },
+  {
+    "id": "ef_aviation_passenger",
+    "source": "DEFRA 2023",
+    "activity": "Aviation (passenger, long-haul international)",
+    "sector": "transport",
+    "factor": 0.195,
+    "unit": "kgCO2e/passenger_km",
+    "notes": "Economy class, radiative forcing multiplier included (RF x2.0)."
+  },
+  {
+    "id": "ef_shipping_container",
+    "source": "IMO 4th GHG Study",
+    "activity": "Container shipping (HFO)",
+    "sector": "transport",
+    "factor": 8.7,
+    "unit": "gCO2e/tonne_km",
+    "notes": "Average container vessel. LNG shipping: ~6.2 gCO2/t-km. Ammonia zero-emission: target <1."
+  },
+  {
+    "id": "ef_agriculture_enteric",
+    "source": "IPCC AR6 WG3",
+    "activity": "Livestock enteric fermentation (cattle)",
+    "sector": "agriculture",
+    "factor": 70,
+    "unit": "kgCH4/head/yr",
+    "notes": "Dairy cattle global average. GWP100 conversion: x28 = 1.96 tCO2e/head/yr."
+  },
+  {
+    "id": "ef_landfill_waste",
+    "source": "DEFRA 2023",
+    "activity": "Municipal solid waste landfill (with gas capture)",
+    "sector": "waste",
+    "factor": 467,
+    "unit": "kgCO2e/tonne_waste",
+    "notes": "Includes CH4 not captured. Without capture: ~800-1200 kgCO2e/t."
+  },
+  {
+    "id": "ef_electricity_uae",
+    "source": "ADWEA 2023",
+    "activity": "UAE grid electricity",
+    "sector": "energy",
+    "factor": 0.40,
+    "unit": "kgCO2e/kWh",
+    "notes": "2023 grid intensity. Expected to fall to 0.18 with Barakah nuclear + Noor solar by 2030."
+  },
+  {
+    "id": "ef_electricity_eu_avg",
+    "source": "EEA 2023",
+    "activity": "EU average grid electricity",
+    "sector": "energy",
+    "factor": 0.255,
+    "unit": "kgCO2e/kWh",
+    "notes": "EU27 average 2023. Range: Sweden 0.008 (hydro+nuclear) to Poland 0.73 (coal)."
+  },
+  {
+    "id": "ef_methane_gwp100",
+    "source": "IPCC AR6",
+    "activity": "Methane (CH4) global warming potential",
+    "sector": "all",
+    "factor": 29.8,
+    "unit": "tCO2e/tCH4",
+    "notes": "GWP100 including climate-carbon feedbacks. GWP20 = 82.5. Fossil methane higher: ~33."
+  },
+  {
+    "id": "ef_hfc_refrigerants",
+    "source": "IPCC AR6",
+    "activity": "HFC-134a refrigerant (air conditioning)",
+    "sector": "buildings",
+    "factor": 1530,
+    "unit": "tCO2e/tHFC",
+    "notes": "Dominant UAE/Gulf AC refrigerant. Buildings cooling = 30-40% UAE electricity demand."
+  }
+]

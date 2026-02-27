@@ -1,0 +1,132 @@
+[
+  {
+    "id": "carbon_tax",
+    "name": "Carbon Tax",
+    "type": "carbon_pricing",
+    "description": "A direct price on greenhouse gas emissions, typically CO2 or CO2e. Applied upstream (fuel extraction), midstream (fuel import/distribution), or downstream (emitters). Provides price certainty but not quantity certainty.",
+    "examples": [
+      "Canada federal carbon price ($65 CAD/tCO2 in 2024, rising to $170 by 2030)",
+      "Sweden carbon tax ($137 USD/tCO2, world's highest)",
+      "Chile carbon tax ($5/tCO2, covers ~40% of emissions)",
+      "Singapore carbon tax ($25 SGD/tCO2, rising to $50-80 by 2030)"
+    ],
+    "typical_parameters": {
+      "price_range_usd_tCO2": "5-140",
+      "coverage_sectors": "energy, industry, transport (fuel)",
+      "phase_in": "typically 2-5 year ramp-up",
+      "exemptions": "often agriculture, SMEs below threshold",
+      "revenue_use": "rebates, green investment, deficit reduction"
+    },
+    "emission_reduction_effectiveness": "5-20% reduction in covered sectors per $50/t",
+    "political_economy_notes": "Distributionally regressive without rebates. Visible price signal can trigger backlash. Revenue recycling critical for public acceptance.",
+    "interactions": ["ETS (can coexist as carbon price floor)", "fuel subsidies (undermines effectiveness)", "energy efficiency standards (complementary)"]
+  },
+  {
+    "id": "emissions_trading_scheme",
+    "name": "Emissions Trading Scheme (ETS / Cap-and-Trade)",
+    "type": "carbon_pricing",
+    "description": "Sets a quantitative cap on total emissions from covered entities. Entities trade permits. Provides emissions certainty but price uncertainty. Price discovery through market.",
+    "examples": [
+      "EU ETS (world's largest, ~40% EU emissions, €65/tCO2 2024)",
+      "California-Quebec linked cap-and-trade (~$30/tCO2)",
+      "China national ETS (power sector only, ~$11/tCO2 CNY equivalent)",
+      "UK ETS (~£35/tCO2 post-Brexit)",
+      "RGGI (US Northeast power sector)"
+    ],
+    "typical_parameters": {
+      "price_range_usd": "5-80",
+      "cap_trajectory": "declining 2-5% per year typically",
+      "allocation": "free allocation (transitional) vs auction",
+      "coverage": "power + large industry typical",
+      "linking": "can link with other ETSs"
+    },
+    "emission_reduction_effectiveness": "Guaranteed reduction to cap level; market determines cost-effective abatement",
+    "political_economy_notes": "Free allocation reduces competitiveness concerns but weakens incentive. Price volatility can undermine investment signals.",
+    "interactions": ["carbon tax (price floor)", "CBAM (addresses leakage)", "free allocation (transition mechanism)"]
+  },
+  {
+    "id": "cbam",
+    "name": "Carbon Border Adjustment Mechanism (CBAM)",
+    "type": "trade_measure",
+    "description": "Applies a carbon price to imported goods equivalent to what domestic producers pay under an ETS or carbon tax. Prevents carbon leakage and competitive disadvantage.",
+    "examples": [
+      "EU CBAM (launched Oct 2023, full implementation 2026, covers steel/cement/aluminium/fertilisers/electricity/hydrogen)",
+      "Proposed US Clean Competition Act",
+      "UK exploring CBAM by 2027"
+    ],
+    "typical_parameters": {
+      "covered_goods": "carbon-intensive traded goods (steel, cement, aluminium typically)",
+      "price_linkage": "tied to domestic carbon price",
+      "verification": "requires production carbon intensity data from exporters",
+      "wto_compatibility": "disputed — GATT Article XX environmental exception potential defense"
+    },
+    "emission_reduction_effectiveness": "Reduces carbon leakage by 20-50% for covered sectors. Indirect pressure on trading partners to price carbon.",
+    "political_economy_notes": "Significant diplomatic friction with developing countries. WTO legal risk. Data collection burden.",
+    "interactions": ["ETS (direct link)", "free allocation (must phase out as CBAM phases in)", "trade agreements"]
+  },
+  {
+    "id": "renewable_mandate",
+    "name": "Renewable Energy Mandate / Portfolio Standard",
+    "type": "regulatory_standard",
+    "description": "Legal requirement for a specific percentage of energy/electricity to come from renewable sources by a specified year. May be technology-specific (solar, wind) or technology-neutral.",
+    "examples": [
+      "UAE: 44% clean energy by 2050 (Masdar + DEWA projects)",
+      "EU: 45% renewable electricity by 2030 (revised RED III)",
+      "US state RPSs: California 100% clean by 2045",
+      "India: 500 GW non-fossil capacity by 2030",
+      "Abu Dhabi Noor Energy: 1177 MW CSP + 100 MW solar PV"
+    ],
+    "typical_parameters": {
+      "target_pct": "25-100% of electricity",
+      "timeline": "5-25 years",
+      "compliance": "via certificates (RECs/GOs) or physical generation",
+      "penalties": "typically $5-50/MWh shortfall"
+    },
+    "emission_reduction_effectiveness": "Each percentage point of grid decarbonisation reduces electricity sector intensity proportionally",
+    "political_economy_notes": "Technology cost reductions have made renewables mandates increasingly cost-neutral or beneficial. Grid stability costs (storage, backup) are additional.",
+    "interactions": ["carbon tax (both price electricity carbon)", "grid infrastructure investment", "energy storage mandates"]
+  },
+  {
+    "id": "methane_regulation",
+    "name": "Methane Emission Regulation",
+    "type": "sectoral_regulation",
+    "description": "Direct regulations on methane emissions from oil & gas, coal, and agriculture sectors. Includes leak detection and repair (LDAR), limits on venting/flaring, and equipment standards.",
+    "examples": [
+      "US EPA Subpart W (oil & gas methane reporting)",
+      "EU Methane Regulation 2024 (LDAR requirements for oil & gas)",
+      "Global Methane Pledge (30% reduction by 2030, 150+ countries)",
+      "IEA Net Zero: no new methane from fossil fuels by 2030"
+    ],
+    "typical_parameters": {
+      "ldar_frequency": "quarterly to annual surveys",
+      "flaring_limits": "routine flaring zero by 2030 (World Bank pledge)",
+      "venting_prohibitions": "pneumatic equipment replacements",
+      "coverage": "well sites, gathering, processing, transmission, storage"
+    },
+    "emission_reduction_effectiveness": "30% methane reduction = ~0.3°C avoided warming by 2040 (near-term climate benefit). Typical cost: $0-10/tCO2e (often cost-negative via gas capture value).",
+    "political_economy_notes": "Often cost-effective due to captured gas value. Oil & gas industry prefers voluntary programs. International coordination essential for global impact.",
+    "interactions": ["carbon pricing (methane GWP100=29.8)", "oil & gas revenue (captured gas has value)", "climate finance"]
+  },
+  {
+    "id": "efficiency_standard",
+    "name": "Energy Efficiency Standard",
+    "type": "regulatory_standard",
+    "description": "Minimum performance requirements for energy-consuming equipment, vehicles, or buildings. Technology-forcing standards that reduce energy demand.",
+    "examples": [
+      "EU ETS Buildings/Transport (ETS2 from 2027)",
+      "US CAFE standards (vehicle fuel economy)",
+      "UAE Green Building Code (Estidama Pearl Rating)",
+      "China vehicle efficiency standards (5.0 L/100km fleet average)",
+      "EU Ecodesign Regulation (appliances, lighting)"
+    ],
+    "typical_parameters": {
+      "stringency": "typically 20-40% improvement over baseline",
+      "phase_in": "3-10 year compliance timeline",
+      "scope": "equipment, vehicles, buildings, industrial processes",
+      "verification": "type approval, third-party testing"
+    },
+    "emission_reduction_effectiveness": "Buildings efficiency: 30-60% energy savings potential. Vehicle standards: 15-40% fleet efficiency improvement over 10 years.",
+    "political_economy_notes": "Well-accepted by public; reduces energy bills. Industry opposition to upfront costs. Technology lock-in risk if standards not regularly updated.",
+    "interactions": ["carbon price (both reduce energy demand)", "green public procurement", "appliance labeling"]
+  }
+]

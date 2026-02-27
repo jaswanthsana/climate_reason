@@ -1,0 +1,218 @@
+[
+  {
+    "country_code": "UAE",
+    "name": "United Arab Emirates",
+    "description": "Gulf petro-state transitioning to clean energy. Extreme heat, water stress, oil-dependent economy. Net-Zero 2050 target, 44% clean energy by 2050.",
+    "gdp_usd_bn": 507,
+    "population_millions": 10.0,
+    "gdp_per_capita_usd": 50700,
+    "emissions_by_sector": {
+      "energy_generation": { "MtCO2e_yr": 85, "share_pct": 38 },
+      "oil_gas_upstream": { "MtCO2e_yr": 60, "share_pct": 27 },
+      "industry": { "MtCO2e_yr": 35, "share_pct": 16 },
+      "transport": { "MtCO2e_yr": 22, "share_pct": 10 },
+      "buildings": { "MtCO2e_yr": 13, "share_pct": 6 },
+      "waste": { "MtCO2e_yr": 5, "share_pct": 2 },
+      "agriculture": { "MtCO2e_yr": 2, "share_pct": 1 }
+    },
+    "total_emissions_MtCO2e": 222,
+    "emissions_per_capita_tCO2e": 22.2,
+    "energy_mix": {
+      "natural_gas_pct": 98,
+      "solar_pct": 1.5,
+      "nuclear_pct": 0.5,
+      "oil_pct": 0,
+      "coal_pct": 0,
+      "renewables_target_2030_pct": 44
+    },
+    "key_industries": ["oil_gas", "petrochemicals", "aluminium", "steel", "cement", "tourism", "aviation"],
+    "major_emitters": [
+      { "name": "ADNOC", "sector": "oil_gas", "est_MtCO2e": 50 },
+      { "name": "Emirates Global Aluminium (EGA)", "sector": "aluminium", "est_MtCO2e": 12 },
+      { "name": "Emirates Steel Arkan", "sector": "steel", "est_MtCO2e": 8 },
+      { "name": "DEWA / power sector", "sector": "energy", "est_MtCO2e": 45 }
+    ],
+    "water_energy_nexus": {
+      "desalination_capacity_m3_day": 7500000,
+      "desalination_energy_TWh_yr": 28,
+      "desalination_share_of_electricity_pct": 22,
+      "district_cooling_energy_TWh_yr": 15,
+      "groundwater_depletion_rate_pct_yr": 8,
+      "water_stress_level": "extremely_high",
+      "virtual_water_imports_bn_m3_yr": 18.5
+    },
+    "climate_targets": {
+      "net_zero_year": 2050,
+      "ndc_target": "19% emissions reduction vs BAU by 2030",
+      "clean_energy_target_2030_pct": 44,
+      "solar_target_GW_2030": 14.2,
+      "nuclear_capacity_GW": 5.6,
+      "carbon_capture_target_MtCO2_yr_2030": 10
+    },
+    "carbon_price_context": {
+      "current_carbon_price_usd_tCO2": 0,
+      "fuel_subsidies_usd_bn_yr": 12,
+      "industry_energy_cost_usd_GJ": 3.5,
+      "gas_price_usd_mmbtu": 1.5
+    },
+    "trade_data": {
+      "oil_exports_bn_usd_yr": 130,
+      "non_oil_exports_bn_usd_yr": 45,
+      "top_export_destinations": ["China", "Japan", "South Korea", "India", "EU"],
+      "trade_openness_pct_gdp": 170
+    },
+    "social_indicators": {
+      "expat_population_pct": 88,
+      "energy_poverty_pct": 0.1,
+      "industry_employment_000s": 900,
+      "oil_gas_gdp_share_pct": 30
+    }
+  },
+  {
+    "country_code": "EU",
+    "name": "European Union",
+    "description": "27-member economic bloc with world's most advanced carbon market (EU ETS). Fit for 55 package targeting 55% emission reduction by 2030 vs 1990.",
+    "gdp_usd_bn": 17000,
+    "population_millions": 448,
+    "gdp_per_capita_usd": 38000,
+    "emissions_by_sector": {
+      "energy_generation": { "MtCO2e_yr": 800, "share_pct": 22 },
+      "industry": { "MtCO2e_yr": 650, "share_pct": 18 },
+      "transport": { "MtCO2e_yr": 900, "share_pct": 25 },
+      "buildings": { "MtCO2e_yr": 700, "share_pct": 20 },
+      "agriculture": { "MtCO2e_yr": 420, "share_pct": 12 },
+      "waste": { "MtCO2e_yr": 130, "share_pct": 3 }
+    },
+    "total_emissions_MtCO2e": 3600,
+    "emissions_per_capita_tCO2e": 8.0,
+    "energy_mix": {
+      "renewables_pct": 42,
+      "nuclear_pct": 22,
+      "natural_gas_pct": 20,
+      "coal_pct": 10,
+      "oil_pct": 6
+    },
+    "climate_targets": {
+      "2030_reduction_vs_1990_pct": 55,
+      "net_zero_year": 2050,
+      "ets_sectors_coverage_pct": 40,
+      "ets_price_eur_tCO2": 65
+    },
+    "carbon_price_context": {
+      "ets_price_eur_tCO2": 65,
+      "carbon_border_adjustment": "active_phase_in",
+      "cbam_covered_sectors": ["steel", "cement", "aluminium", "fertilisers", "electricity", "hydrogen"]
+    },
+    "trade_data": {
+      "imports_from_high_carbon_regions_bn_usd": 450,
+      "cbam_revenue_estimate_bn_eur_yr": 9.5
+    }
+  },
+  {
+    "country_code": "US",
+    "name": "United States",
+    "description": "World's largest economy, second-largest emitter. Inflation Reduction Act (IRA) provides $370bn in climate incentives. No federal carbon price.",
+    "gdp_usd_bn": 26900,
+    "population_millions": 335,
+    "gdp_per_capita_usd": 80300,
+    "emissions_by_sector": {
+      "transport": { "MtCO2e_yr": 1800, "share_pct": 28 },
+      "energy_generation": { "MtCO2e_yr": 1550, "share_pct": 25 },
+      "industry": { "MtCO2e_yr": 1200, "share_pct": 23 },
+      "agriculture": { "MtCO2e_yr": 650, "share_pct": 10 },
+      "buildings": { "MtCO2e_yr": 520, "share_pct": 13 }
+    },
+    "total_emissions_MtCO2e": 6340,
+    "emissions_per_capita_tCO2e": 18.9,
+    "energy_mix": {
+      "natural_gas_pct": 40,
+      "petroleum_pct": 35,
+      "renewables_pct": 13,
+      "nuclear_pct": 8,
+      "coal_pct": 10
+    },
+    "climate_targets": {
+      "ndc_target": "50-52% below 2005 levels by 2030",
+      "net_zero_year": 2050
+    },
+    "carbon_price_context": {
+      "federal_carbon_price_usd": 0,
+      "social_cost_carbon_usd": 190,
+      "ira_investment_bn_usd": 370,
+      "rggi_price_usd_tCO2": 13
+    }
+  },
+  {
+    "country_code": "India",
+    "name": "India",
+    "description": "World's third-largest emitter and largest democracy. Rapid economic growth, 800m without clean cooking. NDC: 45% emissions intensity reduction by 2030, 500GW non-fossil by 2030.",
+    "gdp_usd_bn": 3750,
+    "population_millions": 1420,
+    "gdp_per_capita_usd": 2640,
+    "emissions_by_sector": {
+      "energy_generation": { "MtCO2e_yr": 1200, "share_pct": 38 },
+      "industry": { "MtCO2e_yr": 750, "share_pct": 24 },
+      "agriculture": { "MtCO2e_yr": 620, "share_pct": 20 },
+      "transport": { "MtCO2e_yr": 340, "share_pct": 11 },
+      "buildings": { "MtCO2e_yr": 200, "share_pct": 6 }
+    },
+    "total_emissions_MtCO2e": 3170,
+    "emissions_per_capita_tCO2e": 2.2,
+    "energy_mix": {
+      "coal_pct": 55,
+      "oil_pct": 28,
+      "renewables_pct": 12,
+      "natural_gas_pct": 4,
+      "nuclear_pct": 1
+    },
+    "climate_targets": {
+      "non_fossil_capacity_GW_2030": 500,
+      "emissions_intensity_reduction_2030_pct": 45,
+      "net_zero_year": 2070
+    },
+    "carbon_price_context": {
+      "coal_cess_inr_tonne": 400,
+      "perform_achieve_trade_scheme": "active",
+      "carbon_market_status": "developing"
+    }
+  },
+  {
+    "country_code": "China",
+    "name": "China",
+    "description": "World's largest emitter (~30% global). National ETS launched 2021 covering power sector. Peak emissions target before 2030, net zero 2060.",
+    "gdp_usd_bn": 17700,
+    "population_millions": 1411,
+    "gdp_per_capita_usd": 12540,
+    "emissions_by_sector": {
+      "energy_generation": { "MtCO2e_yr": 5500, "share_pct": 42 },
+      "industry": { "MtCO2e_yr": 4200, "share_pct": 32 },
+      "transport": { "MtCO2e_yr": 1200, "share_pct": 9 },
+      "agriculture": { "MtCO2e_yr": 750, "share_pct": 6 },
+      "buildings": { "MtCO2e_yr": 700, "share_pct": 5 },
+      "waste": { "MtCO2e_yr": 500, "share_pct": 4 },
+      "forestry_lulucf": { "MtCO2e_yr": -700, "share_pct": -5 }
+    },
+    "total_emissions_MtCO2e": 12900,
+    "emissions_per_capita_tCO2e": 9.1,
+    "energy_mix": {
+      "coal_pct": 57,
+      "oil_pct": 18,
+      "natural_gas_pct": 9,
+      "hydro_pct": 8,
+      "renewables_pct": 6,
+      "nuclear_pct": 2
+    },
+    "climate_targets": {
+      "peak_emissions_year": 2030,
+      "net_zero_year": 2060,
+      "non_fossil_energy_pct_2030": 25,
+      "wind_solar_GW_2030": 1200
+    },
+    "carbon_price_context": {
+      "ets_price_cny_tCO2": 80,
+      "ets_coverage_bn_tCO2": 4.5,
+      "ets_sectors": ["power"],
+      "planned_expansion": ["steel", "cement", "aluminium", "chemicals"]
+    }
+  }
+]

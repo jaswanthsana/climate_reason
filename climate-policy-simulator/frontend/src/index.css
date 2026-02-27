@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #0a0e1a;
+    color: #e2e8f0;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0f1625;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1e2d4a;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3b82f6;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply bg-surface-1 border border-surface-3 rounded-lg;
+  }
+
+  .panel-header {
+    @apply px-4 py-3 border-b border-surface-3 flex items-center gap-2;
+  }
+
+  .label-mono {
+    @apply font-mono text-xs text-slate-400 uppercase tracking-widest;
+  }
+
+  .grid-dot {
+    background-image: radial-gradient(circle, #1e2d4a 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}
+
+/* Spinner animation */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+/* SSE stream cursor blink */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-blink::after {
+  content: '█';
+  animation: blink 1s step-end infinite;
+  color: #3b82f6;
+  font-size: 0.75em;
+  margin-left: 2px;
+}
+
+/* Graph tooltip */
+.graph-tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: #141e30;
+  border: 1px solid #1e2d4a;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #e2e8f0;
+  max-width: 220px;
+  z-index: 50;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+}
+
+/* Reasoning text styling */
+.reasoning-text {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: #94a3b8;
+}

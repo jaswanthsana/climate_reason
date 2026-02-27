@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+*.egg
+
+# ChromaDB (local vector store — re-seed on new machine)
+climate-policy-simulator/backend/chroma_db/
+
+# Node
+climate-policy-simulator/frontend/node_modules/
+climate-policy-simulator/frontend/dist/
+
+# Env files — DO NOT commit secrets
+climate-policy-simulator/backend/.env
